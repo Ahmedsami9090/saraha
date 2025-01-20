@@ -8,10 +8,10 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT;
 bootstrap(app, express);
-const options = {
-  key: fs.readFileSync("./cert.key"), // private key
-  cert: fs.readFileSync("./cert.crt"), // certificate
-};
+// const options = {
+//   key: fs.readFileSync("./cert.key"), // private key
+//   cert: fs.readFileSync("./cert.crt"), // certificate
+// };
 // https.createServer(options, app).listen(port, (err) => {
 //   if (!err) {
 //     console.log("server connected successfully");
