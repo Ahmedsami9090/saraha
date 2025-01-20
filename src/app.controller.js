@@ -6,7 +6,7 @@ const bootstrap = async (app, express) => {
   app.use(cors())
   app.use(express.json());
   await connection();
-  app.use('/', (req,res,next)=>{
+  app.get('/', (req,res,next)=>{
     res.json({msg : "welcome to saraha app"})
   })
   app.use("/users", userRouter);
