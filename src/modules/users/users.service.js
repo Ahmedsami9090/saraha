@@ -81,7 +81,7 @@ export const getProfile = ER.asyncHandler(async (req, res, next) => {
 // ------------------------UPDATE PROFILE------------------------------
 export const updateProfile = ER.asyncHandler(async (req,res,next)=>{
   let updatedData = {}
-  if(req.body.name || req.body.phone){
+  if(req.body.name && req.body.phone){
     updatedData = {name: req.body.name, phone : await EN.encryptData(req.body.name)}
   }else if(req.body.name){
     updatedData = {name: req.body.name}
