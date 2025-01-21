@@ -65,7 +65,7 @@ export const login = ER.asyncHandler(async (req, res, next) => {
   );
   res.status(200).json({
     msg: "success",
-    token: user.role == "admin" ? `Admin ${token}` : `Bearer ${token}`,
+    token,
   });
 });
 // --------------------------GET PROFILE--------------------------------
