@@ -1,4 +1,4 @@
-# Job Search App 🚀
+# Saraha 🚀
 
 Welcome to the **Saraha**, a platform that allows users to Register and receive short messages or feedback form anonymous users.
 
