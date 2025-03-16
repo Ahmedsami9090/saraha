@@ -37,7 +37,7 @@ export const updataProfileSchema = {
   body : Joi.object({
     name : Joi.string().min(3).pattern(/^[a-z A-Z]+$/),
     phone : Joi.string().regex(/^(\+201|01|00201)[0-2,5]{1}[0-9]{8}/),
-  }).required().unknown(false)
+  }).required().unknown(false).or('name', 'phone')
 }
 export const updatePasswordSchema = {
   headers : Joi.object({
